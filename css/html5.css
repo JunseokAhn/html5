@@ -1,0 +1,39 @@
+body{margin: 0; font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;}
+
+.header {background-color: #000; height: 120px;}
+
+.wrapper {width: 1000px; margin: 0 auto; padding: 0px 40px;}
+
+.title {height: 120px; display: table;}
+
+.title > p {margin:0; font-size: 40px; color: #fff; font-weight: bold; display: table-cell; vertical-align: middle;}
+
+.container {padding: 40px 0px;}
+
+.black{border: none; height: 1px; background-color: #454545; }
+.gray{border: none; height: 1px; background-color: #d1d1d1; }
+
+
+.component{font-size: 20px; font-weight: bold; color: #000}
+
+
+.container2 {display: flex;}
+
+.container2 div {flex: 1; border: 1px solid #d1d1d1; height: 33px; margin-left: 14px; display: table;}
+.container2 div > a {margin:0; font-size: 16px; color: #000; text-align: center; display: table-cell; vertical-align: middle; text-decoration: none;}
+
+.container2 div:hover{font-weight: bold; border-color: #454545;}
+
+.container3 {margin-top: 30px; width: 100%;}
+.container3 div {border: 1px solid #d1d1d1; display: table; width:100%;}
+
+.container3 div:first-child {background-color: #f7f7f7; height: 46px; font-size: 16px; color: #333; font-weight: bold;}
+.container3 div:first-child > p {padding-left: 15px;}
+
+.container3 div:last-child {margin-top: -1px; height: 72px; font-size: 12px; color: #000;}
+.container3 div:last-child > p {padding: 30px;}
+
+.container3 div p {display: table-cell; vertical-align: middle;}
+
+#footer {font-size: 12px; color: #999; text-align: center; margin-top: 30px;}
+#footer2 {font-size: 12px; color: #000; text-align: center;}

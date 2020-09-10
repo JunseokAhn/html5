@@ -2,6 +2,12 @@ body{margin: 0; font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans
 
 header {background-color: #000; height: 120px;}
 
+table {border-collapse: collapse; font-size: 12px; color: #555; width: 100%;}
+table, th, td {border: solid 1px #e4e4e4; text-align: center;}
+th, td {line-height: 2;}
+caption {caption-side: top; text-align: left; font-size: 14px; font-weight: bold; color: #000; margin-bottom: 10px;}
+thead {background-color: #f7f7f7;}
+
 .wrapper {width: 1000px; margin: 0 auto; padding: 0px 40px;}
 
 .title {height: 120px; display: table;}
@@ -25,13 +31,12 @@ header {background-color: #000; height: 120px;}
 .container2 div:hover{font-weight: bold; border-color: #454545;}
 
 .container3 {margin-top: 30px; width: 100%;}
-.container3 div {border: 1px solid #d1d1d1; display: table; width:100%;}
+.container3 div {border: 1px solid #d1d1d1; display: table; width:100%; box-sizing: border-box;}
 
 .container3 div:first-child {background-color: #f7f7f7; height: 46px; font-size: 16px; color: #333; font-weight: bold;}
 .container3 div:first-child > p {padding-left: 15px;}
 
-.container3 div:last-child {margin-top: -1px; height: 72px; font-size: 12px; color: #000;}
-.container3 div:last-child > p {padding: 30px;}
+.container3 div:last-child {margin-top: -1px; height: 72px; font-size: 12px; color: #000; padding: 30px; box-sizing: border-box;}
 
 .container3 div p {display: table-cell; vertical-align: middle;}
 

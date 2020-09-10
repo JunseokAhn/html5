@@ -5,7 +5,7 @@ header {background-color: #000; height: 120px;}
 table {border-collapse: collapse; font-size: 12px; color: #555; width: 100%;}
 table, th, td {border: solid 1px #e4e4e4; text-align: center;}
 th, td {line-height: 2;}
-caption {caption-side: top; text-align: left; font-size: 14px; font-weight: bold; color: #000; margin-bottom: 10px;}
+caption {caption-side: top; text-align: left; font-size: 14px; font-weight: bold; color: #000; margin: 30px 0px 10px;}
 thead {background-color: #f7f7f7;}
 
 .wrapper {width: 1000px; margin: 0 auto; padding: 0px 40px;}
@@ -36,9 +36,16 @@ thead {background-color: #f7f7f7;}
 .container3 div:first-child {background-color: #f7f7f7; height: 46px; font-size: 16px; color: #333; font-weight: bold;}
 .container3 div:first-child > p {padding-left: 15px;}
 
-.container3 div:last-child {margin-top: -1px; height: 72px; font-size: 12px; color: #000; padding: 30px; box-sizing: border-box;}
+.container3 div:last-child {margin-top: -1px; height: 72px; font-size: 12px; color: #000; padding: 0px 30px 30px; box-sizing: border-box;}
 
 .container3 div p {display: table-cell; vertical-align: middle;}
+
+.refund td {border: none;}
+.refund th {border-top : border-bottom: 1px #e4e4e4 solid; border-left: none; border-right: none; }
+.refund thead th {border-top : 2px #a5a5a5 solid;}
+.refund tfoot th {border-top : 1px #a5a5a5 solid;}
+
+.refund tbody td:nth-child(n+2) {text-align: right;}
 
 footer p:first-child {font-size: 12px; color: #999; text-align: center; margin-top: 30px;}
 footer p:last-child {font-size: 12px; color: #000; text-align: center;}

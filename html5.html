@@ -17,7 +17,7 @@
 			<div><a href="#component-form" class="hover">폼 요소</a></div>
 			<div><a href="#component-list">리스트 요소</a></div>
 		</nav>
-		<p class="component">구성 요소</p>
+		<p class="f-20 bold">구성 요소</p>
 		<hr class="black">
 		<div class="container3">
 			<div><p id="component-table">테이블 요소</p></div>
@@ -28,7 +28,7 @@
 					</caption>
 					<thead>
 						<tr>
-							<th colspan="3">구분</th><th colspan="2">Small</th><th colspan="2">Medium</th><th colspan="2">Large</th><th colspan="2">X-Large</th>
+							<th colspan="3">구분</th><th colspan="2">Small</th><th colspan="2">Medium</th><th colspan="2">Large</th><th>X-Large</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -53,6 +53,9 @@
 					</tbody>
 				</table>
 				<table class="refund">
+					<caption>
+						환불 가능 금액 조회
+					</caption>
 					<colgroup>
 						<col width="40%">
 						<col width="7%">
@@ -62,9 +65,6 @@
 						<col width="7%">
 						<col width="13%">
 					</colgroup>
-					<caption>
-						환불 가능 금액 조회
-					</caption>
 					<thead>
 						<tr>
 							<th>구분</th><th>환불가능액</th><th></th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수수료</th><th></th><th>총 환불금액</th><th></th>
@@ -188,8 +188,8 @@
 						<input type="text" class="w-100" name="userMail" id="userMail" placeholder="이메일 주소에 '@'를 포함해주세요.">
 
 						<p class="component-text">휴대전화</p>
-						<input type="text" class="w-78" name="telephone" id="telephone" placeholder="숫자만 입력해주세요.">
-						<button class="green fff border-gre w-20 lh-220">인증번호 받기</button>
+						<input type="text" class="w-78 mb-5" name="telephone" id="telephone" placeholder="숫자만 입력해주세요.">
+						<button class="green-box w-20 h-33 sub hover-pointer">인증번호 받기</button>
 						<input type="text" class="w-100" name="check-num" id="check-num" placeholder="인증번호를 입력해주세요.">
 
 						<p class="component-text">취미</p>
@@ -212,14 +212,115 @@
 
 						<p class="component-text">가입인사</p>
 						<textarea class="component-textarea w-100 h-100 p-0"></textarea>
-						<input type="submit" value="가입하기" class="green-box w-100 p-0 mt-10">
+						<button value="가입하기" class="green-box w-100 h-40 p-0 mt-10 hover-pointer">가입하기</button>
 					</div>
 				</form>
 			</div>
 		</div>
 		<div class="container3">
 			<div><p id="component-list">리스트 요소</p></div>
-			<div><p>콘텐츠 영역</p></div>
+			<div>
+				<p class="component-text">'프로젝트' 사전 검색 결과</p>
+				<div class="e4 fb p-30">
+					<h1 class="f-30 mb-35 center">프로젝트</h1>
+					<span class="component-text">프로젝트</span><span class="text-sky f-12 pl-5">영양학사전</span>
+					<p class="f-12">
+						연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획, 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 
+						일반적으로는 특정한 목표, 계획을 위한 학습활동, 실행계획 등을 가리킨다.
+					</p>
+					<span class="component-text">프로젝트</span><span class="text-sky f-12 pl-5">Basic 중학생을 위한 기술, 가정 용어사전</span>
+					<p class="f-12">
+						어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업. 
+					</p>
+				</div>
+
+				<p class="component-text">실시간 검색어</p>
+				<div class="e4 fb w-30 p-15">
+					<button class="gray-box" disabled>1</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EC%9E%85%EC%B6%94">입추</a><br>
+					<button class="gray-box mt-10" disabled>2</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EB%9F%B0%EB%8B%9D%EB%A7%A8+%EC%9C%A0%EC%9E%AC%EC%84%9D">런닝맨 유재석</a><br>
+					<button class="gray-box mt-10" disabled>3</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%9F%B0%EB%8B%9D%EB%A7%A8">런닝맨</a><br>
+					<button class="gray-box mt-10" disabled>4</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EC%86%8C%EB%82%98%EA%B8%B0">소나기</a><br>
+					<button class="gray-box mt-10" disabled>5</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EC%A3%BC%EA%B0%84+%EB%82%A0%EC%94%A8">주간 날씨</a><br>
+					<button class="gray-box mt-10" disabled>6</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%94%EB%9D%BC%EB%A7%8C%EC%8B%9C">깔라만시</a><br>
+					<button class="gray-box mt-10" disabled>7</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%82%B4+%EC%95%84%EC%9D%B4%EB%94%94%EB%8A%94+%EA%B0%95%EB%82%A8%EB%AF%B8%EC%9D%B8">내 아이디는 강남미인</a><br>
+					<button class="gray-box mt-10" disabled>8</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EC%B0%A8%EC%9D%80%EC%9A%B0">차은우</a><br>
+					<button class="gray-box mt-10" disabled>9</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%ED%95%9C%EA%B5%AD%EC%82%AC%EB%8A%A5%EB%A0%A5%EA%B2%80%EC%A0%95%EC%8B%9C%ED%97%98">한국사능력검정시험</a><br>
+					<button class="gray-box mt-10" disabled>10</button><a class="noline f-12 p-5-10 text-black hover-under" href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EB%A7%9B%EC%9E%88%EB%8A%94+%EB%85%80%EC%84%9D%EB%93%A4">맛있는 녀석들</a><br>
+				</div>
+
+				<p class="component-text">쿠키 이용안내</p>
+				<div class="container4 p-15">
+					<ul class="pl-20">
+						<li class="f-12 bold"><span class="text-sky bold">웹툰 작품</span>은 쿠키를 사용하여 대여/구매 하실 수 있습니다.</li>
+						<li class="f-12 pt-10">쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며, <span class="text-red">유효기간은 지금 후 90일</span>입니다.</li>
+						<li class="f-12 pt-10">구매 후 7일 이내, 사용하지 않은 쿠키 패키지는 <span class="text-sky under">구매내역</span>에서 직접 구매 취소할 수 있습니다.</li>
+						<li class="f-12 pt-10">일부 사용 후 잔여 쿠키에 대한 구매 취소는 고객센터를 통해 가능하며, 쿠키 구매 시 지급된 보너스 쿠키를 사용한 경우에는 해당 분량을 제외하고 환불됩니다.</li>
+						<li class="f-12 pt-10">쿠키 구매 또는 사용 전 이용약관 동의가 필요합니다.<br><span class="text-sky under">쿠키 이용약관</span></li>
+					</ul>
+				</div>
+
+				<p class="component-text">뉴스</p>
+				<div class="news news1">
+					<a href=""><img alt="image" src="image/thumbnail1.jpg"></a> 
+					<a href=""><p class="text-blue f-14 bold">[날씨] 내일도 35도 안팎 폭염·내륙 소나기···습도 높아 후텁지근</p></a>
+					<p class="f-12 pt-7">오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다. 일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를 누그러뜨리진 못했는데요. 동해안을 제외한 전국 대부분 지방에 폭염 특보가 이어지는 가운데 내일도 한낮에 서울과 대전 35도, 광주와 대구가 36도까지 오를 것으로 예상됩니다. 내일도 대기가 불안정해지면서 오후에는 내륙에는 소나기가 지나는 곳이 있겠습니다.</p>
+				</div>
+				<div class="news news2 mt--1">
+					<a href=""><p class="text-blue f-14 bold">[펫카드] 강아지 중성화가 필요한 이유</p></a>
+					<p class="f-12 pt-7">(서울=뉴스1) 최서윤 기자,방은영 디자이너 = 강아지 중성화 수술을 놓고 찬반이 팽팽하게 엇갈린다. 많은 사람들은 사람들과 공존하려면 개체수 조절을 위해 필요하다고 주장한다. 그러나 어떤 사람들은 인위적인 수술은 안된다며 반대한다.</p>
+				</div>
+				<div class="news news1 mt--1">
+					<a href=""><img alt="image" src="image/thumbnail1.jpg"></a> 
+					<a href=""><p class="text-blue f-14 bold">다이어트에 좋은 여름 복숭아, 먹으면 안 되는 사람 있어</p></a>
+					<p class="f-12 pt-7">복숭아가 제철이다. 여름 복숭아는 다양한 건강 효과를 낸다. 복숭아에는 포도당, 과당, 수분이 풍부하고 유기산(산성을 띠는 물질로 식품에서 신맛을 냄)이 0.5% 정도로 적게 들어 단맛이 강하다. 복숭아의 열량은 100g당 36kcal다. 복숭아 한 개에 약 100kcal 정도다. 포만감에 비해 열량이 적은 편이어서 다이어트를 하는 사람에게도 좋다. 비타민이 많아서 피로 해소에 도움이 된다.</p>
+				</div>
+
+				<p class="component-text pt-24 clear">웹툰</p>
+				<div class="container4 p-20">
+					<div class="container5">
+						<a id="webtoon1" class="noline" href="">
+							<img alt="image2" src="image/thumbnail2.jpg">
+							<p class="f-14 bold h-18 mt-5 mb-0 text-black">하루 3컷</p>
+							<p class="f-12 mt-5 mb-15 text-black">17화 편리하게 피곤하게</p>
+						</a>
+					</div>
+					<div class="container5 ml-15">
+						<a id="webtoon2" class="noline" href="">
+							<img alt="image2" src="image/thumbnail2.jpg">
+							<p class="f-14 bold h-18 mt-5 mb-0 text-black"><button class="cuttoon" disabled>컷툰</button>유미의 세포들</p>
+							<p class="f-12 mt-5 mb-15 text-black">326화 미래에서 온 텔레파시</p>
+						</a>
+					</div>
+					<div class="container5 ml-15">
+						<a id="webtoon3" class="noline" href="">
+							<img alt="image2" src="image/thumbnail2.jpg">
+							<p class="f-14 bold h-18 mt-5 mb-0 text-black">이말년씨리즈 2018</p>
+							<p class="f-12 mt-5 mb-15 text-black">58화 공포의 떡볶이</p>
+						</a>
+					</div>
+					<div class="container5">
+						<a id="webtoon4" class="noline" href="">
+							<img alt="image2" src="image/thumbnail2.jpg">
+							<p class="f-14 bold h-18 mt-5 mb-0 text-black"><button class="smarttoon" disabled>스마트툰</button>덴마</p>
+							<p class="f-12 mt-5 mb-15 text-black">195화 1.다이크(195)</p>
+						</a>
+					</div>
+					<div class="container5 ml-15">
+						<a id="webtoon5" class="noline" href="">
+							<img alt="image2" src="image/thumbnail2.jpg">
+							<p class="f-14 bold h-18 mt-5 mb-0 text-black"><button class="cuttoon" disabled>컷툰</button>1인용 기분</p>
+							<p class="f-12 mt-5 mb-15 text-black">20화 평가</p>
+						</a>
+					</div>
+					<div class="container5 ml-15">
+						<a id="webtoon6" class="noline" href="">
+							<img alt="image2" src="image/thumbnail2.jpg">
+							<p class="f-14 bold h-18 mt-5 mb-0 text-black">찬란하지 않아도 괜찮아</p>
+							<p class="f-12 mt-5 mb-15 text-black">56화 숨길 수 없어요.</p>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<hr class="d1">

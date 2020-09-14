@@ -1,7 +1,8 @@
 body {margin: 0;}
 
-header {position: fixed; background-color: rgba(64,64,64,75%); min-width: 100%; min-height: 64px;}
-header img {margin-top: 16px; margin-left: 20%;}
+header {position: fixed; top: 0; z-index: 999; background-color: rgba(64,64,64,75%); min-width: 100%; min-height: 64px;}
+header img {margin-top: 16px; margin-right: 80%; float: right;}
+.go_top{position: fixed; right: 0; bottom: 180px; z-index: 999;}
 
 .wrapper {}/*현재기능x*/
 
@@ -13,7 +14,7 @@ header img {margin-top: 16px; margin-left: 20%;}
 
 .container{width: 1000px; padding-top: 300px; display: inline-block;}
 
-.container2{display: inline-block; text-align: center; width: 230px; position: relative;}
+.container2{display: inline-block; text-align: center; width: 230px; position: relative; z-index: 998;}
 .container2 img {border-radius: 10px;}
 .container2 > p:nth-child(2) {font-size: 20px; color: #1b1d21; margin-top: 20px; margin-bottom: 10px;}
 

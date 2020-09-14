@@ -9,7 +9,7 @@ header img {margin-top: 16px; margin-right: 80%; float: right;}
 .section1 {background-image: url(../image/section_invite.jpg); background-repeat: no-repeat; background-position: center; height: 750px; min-width: 1000px; background-color: #fff;}
 .section2 {background-image: url(../image/section_creator.jpg); background-repeat: no-repeat; background-position: center; height: 822px; min-width: 1000px; background-color: #f9939d;}
 .section3 {background-image: url(../image/section_store.jpg); background-repeat: no-repeat; background-position: center; height: 1084px; min-width: 1000px; background-color: #d5e43f; text-align: center;}
-.section4 {background-image: url(../image/pattern_recipe.png); background-repeat: repeat-x; background-position: center; height: 1030px; min-width: 1000px; background-color: #b893f9;}
+.section4 {background-image: url(../image/pattern_recipe.png); background-repeat: repeat-x; background-position: center; height: 1030px; min-width: 1000px; background-color: #b893f9; text-align: center;}
 .section5 {background-color: #fff;}
 
 .container{width: 1000px; padding-top: 300px; display: inline-block;}
@@ -22,12 +22,18 @@ header img {margin-top: 16px; margin-right: 80%; float: right;}
 
 .ml-20{margin-left: 20px;}
 
-.sale{border-radius: 10px; background-color: rgb(96,132,2); height: 230px; width: 230px; opacity: 0; position: absolute; top: 0; display: flex; justify-content: center; flex-direction: column; text-align: center;}
+.sale{border-radius: 10px; background-color: rgb(96,132,2); height: 230px; width: 230px; opacity: 0; transition: opacity 0.5s; position: absolute; top: 0; display: flex; justify-content: center; flex-direction: column; text-align: center;}
 .sale:hover {opacity: 0.9;}
 
 .sale p {margin: 0; display: block;}
 .sale p:first-child {font-size: 65px; color: #fff;}
 .sale p:last-child {font-size: 20px; color: #fff;}
+
+.section4 > img {text-align: center; padding-top: 100px;}
+.section4 a {position: relative; z-index:998;}
+.section4 a > img:first-child {text-align: center; padding-top: 50px;}
+.section4 a > img:last-child {opacity: 0; position: absolute; top: -73.65px; left: 0;}
+.section4 a > img:last-child:hover {opacity: 1;}
 
 @media screen and (min-width: 1920px){
 	.section1 {background-color: #fff;}

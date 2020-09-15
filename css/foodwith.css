@@ -1,0 +1,29 @@
+body {margin: 0; font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;}
+
+header {height: 50px; position: fixed;  background-color: #fff; width: 100%;}
+header div {height: 50px; display: flex; justify-content: center; flex-direction: column;}
+header img {width: 114px; margin-left: 15px;}
+header ul {list-style: none; position: absolute; right: 15px;}
+header li {display: inline-block; cursor: pointer; color: #333; font-size: 18px; margin-left: 15px;}
+
+.wrapper {max-width: 988px; margin:0 auto;}
+header .wrapper {position: relative;}
+
+.section1 {background-color: #ffee02;}
+
+@media screen and (min-width: 320px){
+
+
+}
+@media screen and (min-width: 768px){
+	.section1 {height: 380px;}
+
+}
+@media screen and (min-width: 1024px){
+
+	header {height: 70px;}
+	header img {width: fit-content}
+	header div {height: 70px;}
+	header li{font-size: 22px;}
+	.section1 {height: 470px;}
+}

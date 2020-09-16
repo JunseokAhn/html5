@@ -2,28 +2,46 @@ body {margin: 0; font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, san
 
 header {height: 50px; position: fixed;  background-color: #fff; width: 100%;}
 header div {height: 50px; display: flex; justify-content: center; flex-direction: column;}
-header img {width: 114px; margin-left: 15px;}
-header ul {list-style: none; position: absolute; right: 15px;}
-header li {display: inline-block; cursor: pointer; color: #333; font-size: 18px; margin-left: 15px;}
+header ul {list-style: none; padding: 0;}
+header li {cursor: pointer; color: #333; font-size: 18px;}
+
+header .wrapper ul {position: absolute; right: 15px;}
+header .wrapper li { margin-left: 15px; display: inline-block;}
+
+header .wrapper {position: relative;}
+header .wrapper > img {width: 114px; margin-left: 15px;}
+
+header .wrapper ul > label {display: inline;}
+header .wrapper ul > li {display: none;}
 
 .wrapper {max-width: 988px; margin:0 auto;}
-header .wrapper {position: relative;}
+.menu {text-align: center; height: 128px; display: none;}
+.menu ul {background-color: #fff; margin: 0; padding: 10px 0;}
+.menu li {height: 36px; display: flex; justify-content: center; flex-direction: column;}
 
-.section1 {background-color: #ffee02;}
+input[type="checkbox"] {display: none;}
+input[type="checkbox"]:checked + .menu {display: inline;}
 
-@media screen and (min-width: 320px){
+.section1 {background-color: #ffee02; height: 380px;}
 
+
+
+@media (max-width: 767px){
 
 }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
+
 	.section1 {height: 380px;}
+	header .wrapper ul > label {display: none;}
+	header .wrapper ul > li {display: inline;}
 
 }
-@media screen and (min-width: 1024px){
+@media (min-width: 1024px){
 
 	header {height: 70px;}
-	header img {width: fit-content}
 	header div {height: 70px;}
 	header li{font-size: 22px;}
+	header .wrapper > img {width: fit-content}
+
 	.section1 {height: 470px;}
 }

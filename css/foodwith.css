@@ -16,8 +16,33 @@ header .wrapper > img {width: 114px; margin-left: 15px;}
 header .wrapper ul > label {display: inline;}
 header .wrapper ul > li {display: none;}
 
+hr {border: none; height: 1px; background-color: #c1c1c1; clear: both; }
+ul {list-style: none;}
+a {text-decoration: none; color: #333;} 
+
 .wrapper {max-width: 988px; margin:0 auto;}
 
+.f-16 {font-size: 16px !important;}
+.f-14 {font-size: 14px !important;}
+.black {color: #333 !important;}
+.bold {font-weight: bold !important;}
+.fl-l {float: left !important;}
+.fl-r {float: right !important;}
+.cl-b {clear: both !important;}
+.m-30 {margin: 30px !important;}
+.mt-0{margin-top: 0 !important;}
+.mt-10{margin-top: 10px !important;}
+.mt-20{margin-top: 20px !important;}
+.mb-10{margin-bottom: 10px !important;}
+.mb-20{margin-bottom: 20px !important;}
+.mb-30{margin-bottom: 30px !important;}
+.ml-15{margin-left: 15px !important;}
+.pl-0{padding-left: 0 !important;}
+.bo-n{border:none !important;}
+
+.center{text-align: center;}
+.flex {display: flex;}
+.in-flex {display: inline-flex;}
 
 nav img { cursor: pointer;}
 .menu {text-align: center; height: 128px; display: none;}
@@ -26,6 +51,7 @@ nav img { cursor: pointer;}
 
 input[type="checkbox"] {display: none;}
 input[type="checkbox"]:checked + .menu {display: inline;}
+
 
 .section1 {background-color: #ffee02; padding-top: 50px; text-align: center;}
 
@@ -41,6 +67,7 @@ input[type="checkbox"]:checked + .menu {display: inline;}
 
 .circle {border-radius: 70%}
 
+
 .section2 {background-color: #f0f0f0; padding: 15px;}
 
 .container2 {text-align: center;}
@@ -51,8 +78,8 @@ input[type="checkbox"]:checked + .menu {display: inline;}
 #show-more div {display: table-cell; vertical-align: middle;}
 #show-more img {opacity: 0.7; width: 20px; vertical-align: bottom;}
 
-.section3 {background-color: #f4f5f7; padding: 15px;}
 
+.section3 {background-color: #f4f5f7; padding: 15px;}
 
 .section3 h1 {font-size: 30px; font-weight: normal;}
 .section3 h3 {font-size: 18px; font-weight: normal; margin-bottom: 30px;}
@@ -75,6 +102,13 @@ form textarea {width: 100%; height: 120px; resize: none; border:1px solid #c1c1c
 
 form input::placeholder{font-size: 14px; color: #acacac;}
 form textarea::placeholder{font-size: 14px; color: #acacac;}
+
+
+.section4 {background-color: #f0f0f0; padding: 15px;}
+.section4 ul {list-style: none; padding: 0; display: flex;}
+.section4 ul a li {padding: 0 10px; border-left: 1px solid #c1c1c1;}
+
+footer {background-color: #fff;}
 
 @media (min-width: 768px){
 
@@ -106,6 +140,14 @@ form textarea::placeholder{font-size: 14px; color: #acacac;}
 
 	form input:nth-child(5) {width: 48.4%;}
 	form select {width: 48.4%;}
+
+	.section4 li:first-child {display: block;}
+
+	.p-19-tb {padding: 19px !important;}
+	.pt-3-tb {padding: 3px !important;}
+	.pl-19-tb {padding-left: 19px !important;}
+	.m-0-tb {margin: 0 !important;}
+	.fl-l-tb {float: left !important;}
 }
 @media (min-width: 1024px){
 
@@ -130,12 +172,12 @@ form textarea::placeholder{font-size: 14px; color: #acacac;}
 	.container2:hover p {opacity: 1}
 
 	.section3 {padding: 80px 0;}
-	.section3 .wrapper {height: 450px;  background: url(../image/bg_pencil.png) no-repeat 0 80%; background-size: 98%; }
+	.section3 .wrapper {overflow: auto; background: url(../image/bg_pencil.png) no-repeat 0 80%; background-size: 98%; }
 	.section3 h1 {font-size: 42px;}
 
 	.section3 .wrapper div:first-child{float: left; width: 35%; text-align: left;}
 	.section3 .wrapper div:last-child{float: right; width: 590px; box-sizing: border-box; opacity: 0.9;}
-	
+
 	form input:nth-child(5) {width: 48%;}
 	form select {width: 48%;}
 

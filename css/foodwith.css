@@ -22,13 +22,20 @@ a {text-decoration: none; color: #333;}
 
 .wrapper {max-width: 988px; margin:0 auto;}
 
-.f-16 {font-size: 16px !important;}
 .f-14 {font-size: 14px !important;}
-.black {color: #333 !important;}
+.f-16 {font-size: 16px !important;}
+.f-28-36 {font-size: 28px;}
+
 .bold {font-weight: bold !important;}
+
+.black {color: #333 !important;}
+.gray {color: #666 !important;}
+.dark-cyan {color: #008b8b !important;}
+
 .fl-l {float: left !important;}
 .fl-r {float: right !important;}
 .cl-b {clear: both !important;}
+
 .m-30 {margin: 30px !important;}
 .mt-0{margin-top: 0 !important;}
 .mt-10{margin-top: 10px !important;}
@@ -38,7 +45,11 @@ a {text-decoration: none; color: #333;}
 .mb-30{margin-bottom: 30px !important;}
 .ml-15{margin-left: 15px !important;}
 .pl-0{padding-left: 0 !important;}
+
+.w-100{width: 100% !important;}
+
 .bo-n{border:none !important;}
+.under{text-decoration: underline;}
 
 .center{text-align: center;}
 .flex {display: flex;}
@@ -108,12 +119,27 @@ form textarea::placeholder{font-size: 14px; color: #acacac;}
 .section4 ul {list-style: none; padding: 0; display: flex;}
 .section4 ul a li {padding: 0 10px; border-left: 1px solid #c1c1c1;}
 
+
+.section5 {background-color: #f0f0f0; padding: 50px 15px;}
+
+.container3 {font-size: 14px; color: #666;}
+.container3 span:first-child{font-weight: bold; display: inline-block; width: 100px;}
+
+.tahoma {font-family: tahoma}
+
+table {border-collapse: collapse; width: 100%;}
+thead td {background-color: #eaeaea; font-weight: bold; font-size: 16px;}
+tr {height: 30px;}
+td {border: 1px solid #c1c1c1; padding-left: 10px; font-size: 14px;}
+
 footer {background-color: #fff;}
 
 @media (min-width: 768px){
 
 	header .wrapper ul > label {display: none;}
 	header .wrapper ul > li {display: inline;}
+
+	.f-28-36 {font-size: 36px;}
 
 	.section1 {height: 330px;}
 
@@ -148,6 +174,8 @@ footer {background-color: #fff;}
 	.pl-19-tb {padding-left: 19px !important;}
 	.m-0-tb {margin: 0 !important;}
 	.fl-l-tb {float: left !important;}
+
+	.container3 {display: inline-block; width: 49%;}
 }
 @media (min-width: 1024px){
 
@@ -177,6 +205,8 @@ footer {background-color: #fff;}
 
 	.section3 .wrapper div:first-child{float: left; width: 35%; text-align: left;}
 	.section3 .wrapper div:last-child{float: right; width: 590px; box-sizing: border-box; opacity: 0.9;}
+
+	.section5 {padding-top: 70px;}
 
 	form input:nth-child(5) {width: 48%;}
 	form select {width: 48%;}

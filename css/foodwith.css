@@ -2,7 +2,7 @@ body {margin: 0; font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, san
 
 a {text-decoration: none;}
 
-header {height: 50px; position: fixed;  background-color: #fff; width: 100%;}
+header {height: 50px; position: fixed;  background-color: #fff; width: 100%; z-index: 999;}
 header div {height: 50px; display: flex; justify-content: center; flex-direction: column;}
 header ul {list-style: none; padding: 0;}
 header li {cursor: pointer; color: #333; font-size: 18px;}
@@ -17,6 +17,7 @@ header .wrapper ul > label {display: inline;}
 header .wrapper ul > li {display: none;}
 
 .wrapper {max-width: 988px; margin:0 auto;}
+
 
 nav img { cursor: pointer;}
 .menu {text-align: center; height: 128px; display: none;}
@@ -50,6 +51,31 @@ input[type="checkbox"]:checked + .menu {display: inline;}
 #show-more div {display: table-cell; vertical-align: middle;}
 #show-more img {opacity: 0.7; width: 20px; vertical-align: bottom;}
 
+.section3 {background-color: #f4f5f7; padding: 15px;}
+
+
+.section3 h1 {font-size: 30px; font-weight: normal;}
+.section3 h3 {font-size: 18px; font-weight: normal; margin-bottom: 30px;}
+
+.section3 .wrapper div:nth-child(1) {text-align: center;}
+.section3 .wrapper div:nth-child(2) {background-color: #fff; padding: 25px; box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);}
+
+form p {font-size: 16px; font-weight: bold; color: #333;}
+form p:first-child{display: inline-block;}
+form input:nth-child(3) {display: block; width: 100%;}
+form input:nth-child(5) {width: 46.7%;}
+form select {width: 46.7%;}
+
+form input[type="submit"] {border:2px solid #bdbdbd; background-color: #e9e9e9; font-size: 11px; color: #666; float: right; padding: 5px 10px; margin-top: 8px;}
+form input[type="text"], form select {border:none; border-bottom: 1px solid #c1c1c1;}
+form input[type="text"], form select {padding: 10px 0;}
+form select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../image/icon_arrow_email.png) no-repeat 95% 40%; background-size: 13px; }
+
+form textarea {width: 100%; height: 120px; resize: none; border:1px solid #c1c1c1; margin-top: 20px; padding: 15px; box-sizing: border-box;}
+
+form input::placeholder{font-size: 14px; color: #acacac;}
+form textarea::placeholder{font-size: 14px; color: #acacac;}
+
 @media (min-width: 768px){
 
 	header .wrapper ul > label {display: none;}
@@ -71,7 +97,15 @@ input[type="checkbox"]:checked + .menu {display: inline;}
 
 	.container2 {display: inline-block; width: 48%;}
 	.container2 p {font-size: 18px; height: 40px;}
-	
+
+	.section3 {padding: 30px 34px;}
+	.section3 .wrapper div:nth-child(2) {padding: 40px 50px;}
+
+	form input[type="submit"] {font-size: 15px;  padding: 10px 20px; margin-top: 0}
+	form input[type="text"] {margin-bottom: 30px;}
+
+	form input:nth-child(5) {width: 48.4%;}
+	form select {width: 48.4%;}
 }
 @media (min-width: 1024px){
 
@@ -91,7 +125,18 @@ input[type="checkbox"]:checked + .menu {display: inline;}
 	.section2 div:nth-child(3n-1), .section2 div:nth-child(3n) {margin-left: 20px;}
 	.section2 div:nth-child(n+3) {margin-top:20px;}
 
-	.container2 {width: 31.6%; position: relative;}
+	.container2 {width: 31.6%; position: relative; z-index: 998;}
 	.container2 p {position: absolute; bottom: 0; width: 100%; padding: 15px; box-sizing: border-box; opacity: 0}
 	.container2:hover p {opacity: 1}
+
+	.section3 {padding: 80px 0;}
+	.section3 .wrapper {height: 450px;  background: url(../image/bg_pencil.png) no-repeat 0 80%; background-size: 98%; }
+	.section3 h1 {font-size: 42px;}
+
+	.section3 .wrapper div:first-child{float: left; width: 35%; text-align: left;}
+	.section3 .wrapper div:last-child{float: right; width: 590px; box-sizing: border-box; opacity: 0.9;}
+	
+	form input:nth-child(5) {width: 48%;}
+	form select {width: 48%;}
+
 }
